@@ -100,4 +100,10 @@ class Article
         return $allArticles;
     }
 
+    public static function all()
+    {
+        $articleHelper = new self;
+        return $articleHelper->allArticles();
+    }   
+
 }

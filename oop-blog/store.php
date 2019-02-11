@@ -1,13 +1,11 @@
 <?php
-
 //  yeni makalenin kayıt işlemi yapılır
 
 require_once "classes/Article.php";
 
 $article = new Article;
-$article->title = "Bu modelden ikinci makale";
-$article->content = "Bu modelden ikinci makale";
+$article->title = $_POST['title'];
+$article->content = $_POST['content'];
 $article->save();
 
-$article->title = "ama değişti";
-$article->save();
+header("Location: detail.php?id=".$article->id);
