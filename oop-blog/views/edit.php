@@ -1,4 +1,4 @@
-<form action="update.php" method="post">
+<form action="?op=update" method="post">
     <input type="hidden" name="id" value="<?=$article->id?>">
     <label for="inpTitle">Başlık</label><br>
     <input type="text" name="title" id="inpTitle" value="<?=$article->title?>"><br>

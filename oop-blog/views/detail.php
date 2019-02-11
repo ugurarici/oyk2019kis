@@ -6,7 +6,7 @@
 Oluşturulma: <?=$article->created_at?><br>
 Güncellenme: <?=$article->updated_at?>
 <hr>
-<a href="edit.php?id=<?=$article->id?>">Düzenle</a> - 
-<a href="delete.php?id=<?=$article->id?>" onclick="return confirm('Gerçten mi? :(')">Sil</a>
+<a href="?op=edit&id=<?=$article->id?>">Düzenle</a> - 
+<a href="?op=delete&id=<?=$article->id?>" onclick="return confirm('Gerçten mi? :(')">Sil</a>
 <hr>
-<a href="index.php">Ana sayfaya dön</a>
+<a href="?op=list">Ana sayfaya dön</a>

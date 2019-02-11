@@ -1,4 +1,4 @@
-<form action="store.php" method="post">
+<form action="?op=store" method="post">
     <label for="inpTitle">Başlık</label><br>
     <input type="text" name="title" id="inpTitle"><br>
     <label for="txtContent">İçerik</label><br>
