@@ -20,6 +20,9 @@ class ArticleController
         $article->content = $_POST['content'];
         $article->save();
 
+        $mc = new MailerController;
+        $mc->newArticleNotification($article);
+
         header("Location: ?op=detail&id=".$article->id);
     }
 
